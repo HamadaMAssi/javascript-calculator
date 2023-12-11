@@ -1,0 +1,82 @@
+:root{
+  --yellow: #FFB534;
+  --dark-green: #65B741;
+  --light-green: #C1F2B0;
+  --light: #FBF6EE;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  transition: 'background' 4s ease-in-out;
+  -webkit-transition: 'background' 4s ease-in-out;
+  -moz-transition: 'background' 4s ease-in-out;
+  -ms-transition: 'background' 4s ease-in-out;
+  -o-transition: 'background' 4s ease-in-out;
+}
+
+#calculator{
+  padding: 40px;
+}
+
+#display, #value{
+  text-align: right;
+  max-height: 20px;
+  min-height: 20px;
+  padding-bottom: 5px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#expression{
+  color: var(--yellow)
+}
+
+#buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+#zero,#clear{
+  grid-column: 1 / span 2;
+}
+
+button{
+  font-size: 1.5em;
+  padding: 20px;
+  border: none;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  transition: transform 0.1s ease-in-out;
+  -webkit-transition: transform 0.1s ease-in-out;
+  -moz-transition: transform 0.1s ease-in-out;
+  -ms-transition: transform 0.1s ease-in-out;
+  -o-transition: transform 0.1s ease-in-out;
+}
+
+button:active{
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+}
+
+.color1{
+  background-color: var(--light);
+}
+.color2{
+  background-color: var(--yellow);
+}
+.color3{
+  background-color: var(--light-green);
+}
